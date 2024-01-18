@@ -1,9 +1,9 @@
 class Dealer:
     def __init__(self):
-        pass
+        self.hand= None
 
     def get_str_hand(self):
-        pass
+        return str (self.hand)
 
-    def hit(self):
-        pass
+    def hit(self,card):
+        self.hand.add(card)

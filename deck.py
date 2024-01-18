@@ -1,15 +1,24 @@
-from deck import Deck
-from hand import Hand
+import random
+from card import Card
+class Deck:
+    def __init__(self,cards):
+         self.cards = []       
+
+    def create_deck(self):
+        for suit in range(4):  # There are 4 suits
+            for rank in range(1, 14):  # Ranks from 1 to 13
+                self.cards.append(Card(suit, rank))
 
 
-class Game:
-    MINIMUM_BET = 1
-
-    def __init__(self, player, dealer):
-        self.player = player
-        self.dealer = dealer
-        self.bet = None
-        self.deck = Deck()
-
-    def start_game(self):
-        pass
+    def shuffle(self):
+         random.choice(self.cards)
+         
+         
+    def deal(n):
+        cards_dealt=[]
+        for x in range (n):
+            card= card.pop()
+            cards_dealt.append(card)
+            return cards_dealt
+        
+    

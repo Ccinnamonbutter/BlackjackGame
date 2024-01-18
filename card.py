@@ -26,19 +26,14 @@ class Card:
 def __init__(self,suit,rank):
     self.suit = suit
     self.rank = rank 
+    self.hidden = False
         
-def __repr__(self):
-    return f"({Card.VALUE_NAMES[self.rank]},{Card.SUIT_SYMBOLS[self.suit]})"
+def __str__(self):
+    if self.hidden :
+        return "unknown"
+    return f"({self.VALUE_NAMES[self.rank]}{self.SUIT_SYMBOLS[self.suit]})"
 
         
-def show(self):
-        print('┌───────┐')
-        print(f'| {self.value:<2}    |')
-        print('|       |')
-        print(f'|   {self.suit}   |')
-        print('|       |')
-        print(f'|    {self.value:>2} |')
-        print('└───────┘') 
 
 
-# def __str__(self,card)
+

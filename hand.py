@@ -1,5 +1,5 @@
 class Hand:
-    def __init__(self):
+    def __init__(self,counter):
         pass
 
     def get_value(self):
