@@ -2,7 +2,9 @@ import random
 from card import Card
 class Deck:
     def __init__(self,cards):
-         self.cards = []       
+         self.cards = []    
+         self.create_deck()
+         self.shuffle()   
 
     def create_deck(self):
         for suit in range(4):  # There are 4 suits
@@ -14,11 +16,13 @@ class Deck:
          random.choice(self.cards)
          
          
-    def deal(n):
+    def deal(self,n):
         cards_dealt=[]
         for x in range (n):
-            card= card.pop()
-            cards_dealt.append(card)
+            #will treat the end of the list as the top of the deck
+            
+            top_card= self.cards.pop()
+            cards_dealt.append(top_card)
             return cards_dealt
-        
+    
     

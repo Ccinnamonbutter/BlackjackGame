@@ -20,7 +20,7 @@ class Card:
         11: "J",
         12: "Q",
         13: "K"
-    }
+    } #A dictionary with it's key as int and values as strings
 
     
 def __init__(self,suit,rank):
