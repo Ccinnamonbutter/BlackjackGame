@@ -1,0 +1,2 @@
+# Blackjack
+Blackjack, also known as 21, is a card game where players aim to beat the dealer by getting a hand value closest to 21 without exceeding it. Players receive two cards and can choose to "hit" for more cards or "stand" with their current hand. The dealer has specific rules to follow. Winning means having a higher hand than the dealer without going over 21. Blackjack (an Ace with a 10-value card) is the best hand. Players can also double down, split pairs, and take insurance. It's a game of strategy, skill, and luck, popular in casinos and online.
